@@ -4,7 +4,7 @@ function Search() {
 
     return (
       <div>
-        <p>testingggg</p>
+        <p>test</p>
       </div>
     );
 }
