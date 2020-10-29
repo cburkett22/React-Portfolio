@@ -2,7 +2,7 @@ import React from "react";
 import Background from "../../img/background.JPG"
 import "./style.css";
 
-var divStyle = {
+const divStyle = {
   backgroundImage: `url(${Background})`
 };
 

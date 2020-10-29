@@ -2,17 +2,38 @@ import React from "react";
 import Row from "../components/Row";
 import Col from "../components/Col";
 
-// Importing project images
+// Importing project
 import PitchitImg from "../img/pitchit.jpg";
 import BurgerImg from "../img/burger.jpg";
 import EmployeeTrackerImg from "../img/emptracker.png";
+
+const cardDivStyle = {
+  paddingTop: "5%",
+  paddingLeft: "2%",
+  paddingRight: "2%"
+};
+
+const pitchitBtnClicked = () => {
+  const url = "https://pitchitadventures.herokuapp.com";
+  window.open(url, "_blank");
+};
+
+const burgerBtnClicked = () => {
+  const url = "https://yummy-burger-logger.herokuapp.com/";
+  window.open(url, "_blank");
+};
+
+const empTrackerBtnClicked = () => {
+  const url = "https://github.com/cburkett22/12-Employee-Tracker";
+  window.open(url, "_blank");
+};
 
 const Projects = () => {
     return (
       <div>
         <Row>
           <Col size="md-12">
-            <div className="row row-cols-1 row-cols-md-3">
+            <div className="row row-cols-1 row-cols-md-3" style={ cardDivStyle }>
               <div className="col mb-4 wow fadeInLeftBig">
                   <div className="card h-100">
                       <div className="view overlay">
@@ -24,7 +45,7 @@ const Projects = () => {
                       <div className="card-body">
                           <h4 className="card-title">PitchIT Adventures</h4>
                           <p className="card-text">Here is a group application that will allow like-minded outdoors-men and women to plan unique trips with their friends. The main dependencies used were Express, Handlebars, MySQL, Node Mailer, Firebase, and Sequelize.</p>
-                          <button id="card-one-btn" type="button" className="btn btn-blue btn-md">Visit App</button>
+                          <button id="card-one-btn" type="button" className="btn btn-blue btn-md" onClick={ pitchitBtnClicked }>Visit App</button>
                       </div>
                   </div>
               </div>
@@ -40,7 +61,7 @@ const Projects = () => {
                       <div className="card-body">
                           <h4 className="card-title">Burger Logger</h4>
                           <p className="card-text">This application will allow the user to devour the burgers they have added. This application utilizes the MVC design pattern. In order to achieve this, Node and MySQL are used to query and route data in the application, and Handlebars to generate the HTML.</p>
-                          <button id="card-two-btn" type="button" className="btn btn-blue btn-md">Visit App</button>
+                          <button id="card-two-btn" type="button" className="btn btn-blue btn-md" onClick={ burgerBtnClicked }>Visit App</button>
                       </div>
                   </div>
               </div>
@@ -56,7 +77,7 @@ const Projects = () => {
                   <div className="card-body">
                     <h4 className="card-title">CLI Employee Tracker</h4>
                     <p className="card-text">This application will allow a company to view, add, remove, and update their employees all in one location. In order to achieve this, I utilized Express.js, inquirer, and MySQL to save user input.</p>
-                    <button id="card-three-btn" type="button" className="btn btn-blue btn-md">Visit App</button>
+                    <button id="card-three-btn" type="button" className="btn btn-blue btn-md" onClick={ empTrackerBtnClicked }>Visit App</button>
                   </div>
                 </div>
               </div>
