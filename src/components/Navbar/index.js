@@ -2,7 +2,10 @@ import React from "react";
 import { Link } from "react-router-dom";
 import "./style.css";
 
-// Depending on the current path, this component sets the "active" class on the appropriate navigation link item
+const navbarBtns = {
+  right: "0"
+};
+
 function Navbar() {
   return (
     <nav className="navbar navbar-expand-lg navbar-light bg-light">
@@ -41,6 +44,18 @@ function Navbar() {
           </li>
         </ul>
       </div>
+      <ul class="navbar-nav ml-auto nav-flex-icons" style={ navbarBtns }>
+            <li class="nav-item">
+                <a class="nav-link waves-effect waves-light" href="https://github.com/cburkett22" target="_blank" rel="noopener noreferrer">
+                    <i class="fab fa-github"></i>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link waves-effect waves-light" href="https://www.linkedin.com/in/corey-burkett/" target="_blank" rel="noopener noreferrer">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+            </li>
+        </ul>
     </nav>
   );
 }
