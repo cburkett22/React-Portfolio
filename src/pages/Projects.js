@@ -2,7 +2,7 @@ import React from "react";
 import Row from "../components/Row";
 import Col from "../components/Col";
 
-// Importing project
+// Importing project images
 import PitchitImg from "../img/pitchit.jpg";
 import BurgerImg from "../img/burger.jpg";
 import EmployeeTrackerImg from "../img/emptracker.png";
