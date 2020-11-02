@@ -1,3 +1,7 @@
 nav.navbar.navbar-default {
     margin-bottom: 0;
-  }
+}
+
+.navbar {
+  background-color: rgba(20, 147, 231, 0.801) !important;
+}
